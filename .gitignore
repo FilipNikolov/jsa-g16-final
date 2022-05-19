@@ -6,6 +6,7 @@ node_modules
 .pnp.js
 db
 config
+config.json
 
 # testing
 /coverage
