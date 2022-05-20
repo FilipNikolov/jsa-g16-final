@@ -3,7 +3,7 @@ const {
     Account,
     AccountLogin
 } = require('../../../pkg/account/validate');
-const account = require('../pkg/account');
+const account = require('../../../pkg/account');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const config = require('../../../pkg/config');

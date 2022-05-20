@@ -1,5 +1,5 @@
 const config = require('../../pkg/config');
-require('../../../pkg/db');
+require('../../pkg/db');
 
 const express = require('express');
 const jwt = require('express-jwt');
@@ -32,9 +32,9 @@ api.use(function (err, req, res, next) {
     }
 });
 
-api.listen(config.get('service').auth.port, err => {
+api.listen(config.get('services').auth.port, err => {
     if (err) return console.log(err);
-    console.log(`Server started on port ${config.get('service').auth.port}`);
+    console.log(`Server started on port ${config.get('services').auth.port}`);
 });
 
 
