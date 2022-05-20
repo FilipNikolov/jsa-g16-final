@@ -5,8 +5,9 @@ node_modules
 /.pnp
 .pnp.js
 db
-config
-config.json
+
+# /config.json
+# config.json
 
 # testing
 /coverage

@@ -27,6 +27,13 @@ app.use(
     )
 );
 
+// app.use(
+//     '/',
+//     proxy(
+//         'http://localhost:3000',
+//         { proxyReqPathResolve: (req) => `http://localhost:3000/${req.url}` }
+//     )
+// );
 app.use('/', express.static(path.join(__dirname, '/../../web/build')));
 
 const PORT = process.env.PORT || config.get('services').proxy.port;
